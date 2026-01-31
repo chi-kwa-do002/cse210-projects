@@ -1,5 +1,9 @@
 using System;
 
+// Creativity: Instead of hiding only one word at a time, this program hides
+// three random words per Enter press to increase difficulty and improve memorization.
+
+
 class Program
 {
     static void Main(string[] args)
@@ -18,7 +22,7 @@ class Program
 
             string input = Console.ReadLine();
 
-            if (input.ToLower() == "quit")
+            if (input != null && input.ToLower() == "quit")
             {
                 break;
             }
