@@ -1,0 +1,52 @@
+Foundation Program #1
+Abstraction with YouTube Videos
+What does the program do?
+
+This program models a simplified version of YouTube. It allows the creation of videos, the addition of comments to each video, and the display of video information including the number of comments and comment details. The program demonstrates abstraction by separating videos, comments, and program control into distinct classes.
+
+The program creates multiple video objects, each with a title, author, and length in seconds. Each video also contains a list of comments. The program displays the video information, the total number of comments for each video, and the details of each comment.
+
+Candidates for Classes
+Video
+Comment
+Program
+
+Program Class
+The Program class serves as the entry point of the application. It is responsible for:
+Creating multiple Video objects
+Adding comments to each video
+Storing videos in a list
+Looping through the videos to display their information and comments
+This class coordinates the overall flow of the program.
+
+Video Class
+The Video class represents a YouTube video. Its responsibilities include:
+Storing the video title, author, and length
+Maintaining a list of comments associated with the video
+Providing a method to add comments to the video
+Providing a method to return the number of comments for the video
+Providing access to the list of comments so they can be displayed
+This demonstrates abstraction by grouping all video-related data and behavior into a single class.
+
+Comment Class
+The Comment class represents a comment on a video. Its responsibilities include:
+Storing the name of the commenter
+Storing the comment text
+This class abstracts comment data into its own structure, separate from videos.
+
+How Abstraction Is Demonstrated
+Video-related data is grouped into the Video class.
+Comment-related data is grouped into the Comment class.
+The program works with videos and comments as objects rather than managing raw data directly.
+Methods such as AddComment() and GetNumberOfComments() provide controlled interaction with video data.
+
+
+Program Flow Description
+A list of videos is created.
+Three video objects are instantiated with a title, author, and length.
+Each video is given three comments.
+All videos are stored in a list.
+The program iterates through the list of videos and displays:
+The video title, author, and length
+The number of comments for the video
+Each comment’s name and text
