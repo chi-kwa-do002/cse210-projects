@@ -2,6 +2,12 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 
+// EXCEEDING REQUIREMENTS:
+// - Added a leveling system based on total score.
+// - Added fun level titles that change as user gains points.
+// - Designed flexible goal architecture for easy expansion.
+
+
 class Program
 {
     static List<Goal> goals = new List<Goal>();
